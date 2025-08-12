@@ -33,7 +33,7 @@ public class Test {
 		         System.out.println("---------------------------------------------------------------");
 		         int n = Sc.nextInt();
 		TeamService.printTeamDetails(n);
-		System.out.println();
+		System.out.println("Test Github");
 		System.out.println("---***---THANK YOU FOR USING IPL DETAILS APP---***---");
 	}
 }
