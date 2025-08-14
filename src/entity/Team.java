@@ -1,4 +1,7 @@
 package entity;
+
+import java.io.ObjectInputStream.GetField;
+
 public class Team {
 
 	private int id;
@@ -7,6 +10,23 @@ public class Team {
 	private String coachName;
 	private float nRR;
 	private boolean Qualified;
+	private String shortName;
+	
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
+	}
+	public String getShortName() {
+		return shortName;
+	}
+	
+	//converts object into string
+	// right click -> source -> generate to string()
+	@Override
+	public String toString() 
+	{
+		return "Team [id=" + id + ", teamName=" + teamName + ", captainName=" + captainName + ", coachName=" + coachName
+				+ ", nRR=" + nRR + ", Qualified=" + Qualified + ", shortName=" + shortName + "]";
+	}
 	
 	public void setId(int id) {
 		this.id = id;
@@ -27,6 +47,10 @@ public class Team {
 		this.Qualified = isQualified;
 	}
 	
+	
+	
+	
+
 	// getter
 	public int getId() {
 		return id;
@@ -51,5 +75,6 @@ public class Team {
 	{
 		return Qualified;
 	}
+	
 	
 }
